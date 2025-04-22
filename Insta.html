@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Instagram Mock</title>
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+
+        <style>
+        
+ /*container is "disabled for some reason" */   
+.container{
+            border: 1px solid #333; /* The border around all content */
+            padding: 20px;
+            max-width: 340px;  /* Keeps it from getting too wide on big screens */
+            margin:auto;
+            border-radius:0px; /* Optional: rounded corners */
+            display: flex;
+            flex-direction: column; /* Ensures content stacks vertically*/
+            text-align: center;
+
+}
+
+        header{
+            text-align:center;
+            padding: 0px;  
+        }
+        h1{
+            font-size: 35px;
+        }
+        .p1{
+            font-size: 25px;
+        }
+        nav{
+        
+            padding:0px;
+
+        }
+
+
+       
+        
+        .button1{ 
+            background-color: rgb(17, 136, 255);
+            border:none;
+            color: white;
+            padding: 10px 28px;
+            text-align:center;
+            text-decoration:none;
+            display:flex;/* Use flexbox for alignment */
+            justify-content: center; /* Horizontally center the text */
+            align-items:center;/* Vertically center the text */
+            font-size:16px;
+            margin: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            width:225px;
+
+
+        }
+        section{
+            
+            padding: 15px;
+           
+
+        }
+
+    
+        /* Media query for mobile devices */
+        @media(max-width:600px){
+    .container{
+        max-width: 300px; /* Use full width on small screens */
+        padding: 5px; /* Reduce padding for smaller screens */
+                
+    }
+}
+
+
+        </style>
+    </head>
+
+
+
+    <body>
+
+       <div class="container">
+
+        <header>
+            <h1>Instagram</h1>  
+        </header>
+
+        
+        <nav> <p1>Sign up to see photos and videos from your friends.</p1> </nav>
+
+        <section> <button1 class="button1">Log in with Facebook</button1></section>
+
+        <article>OR </article> 
+
+        <section> 
+            <form> 
+                <input type="tel" id="phone" name="phone" placeholder="Mobile Number or Email" width="40" height="40">
+            </form>
+        </section>
+         
+      
+            
+     </div>    
+            
+        
+
+    </body>   
+
+
+</html>
