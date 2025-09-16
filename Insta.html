@@ -12,7 +12,7 @@
 .container{
             border: 1px solid #333; /* The border around all content */
             padding: 20px;
-            max-width: 340px;  /* Keeps it from getting too wide on big screens */
+            max-width: 600px;  /* Keeps it from getting too wide on big screens */
             margin:auto;
             border-radius:0px; /* Optional: rounded corners */
             display: flex;
@@ -23,25 +23,20 @@
 
         header{
             text-align:center;
-            padding: 0px;  
+            padding: 0px 10px px 10px;
+            font-size: 20px;  
         }
-        h1{
-            font-size: 35px;
-        }
-        .p1{
-            font-size: 25px;
-        }
-        nav{
-        
-            padding:0px;
-
-        }
-
-
        
-        
+      
+        nav{
+            font-size: 85%;
+            text-align:center;
+            padding:0px 10px 0px 10px;
+
+        }
+
         .button1{ 
-            background-color: rgb(17, 136, 255);
+            background-color: rgb(38, 145, 251);
             border:none;
             color: white;
             padding: 10px 28px;
@@ -54,26 +49,155 @@
             margin: auto;
             cursor: pointer;
             border-radius: 8px;
-            width:225px;
-
-
+            width:270px;
+            height:32px;
         }
-        section{
-            
-            padding: 15px;
-           
 
+        .button2{
+            background-color: rgb(38, 145, 251);
+            border:none;
+            color: white;
+            padding: 15px 28px;
+            text-align:center;
+            text-decoration:none;
+            display:flex;/* Use flexbox for alignment */
+            justify-content: center; /* Horizontally center the text */
+            align-items:center;/* Vertically center the text */
+            font-size:16px;
+            margin: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            width:270px; 
+            height: 30px;
+        }
+
+    article1{
+        font-size: 70%;
+        padding: 5px 0px 0px 0px;
+    }    
+        section{  
+            padding: 15px;
         }
 
     
         /* Media query for mobile devices */
         @media(max-width:600px){
     .container{
-        max-width: 300px; /* Use full width on small screens */
+        max-width: 350px; /* Use full width on small screens */
         padding: 5px; /* Reduce padding for smaller screens */
                 
     }
 }
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=tel],input[type=password] {
+    width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;    
+}
+
+.A{
+    padding:  5px 12px 0;
+}
+.B{
+    padding:  5px 12px 0;
+}
+.C{
+    padding:  5px 12px 0;
+}
+.D{
+    padding:  5px 12px 0;
+}
+
+section4{
+font-size: 70%;
+padding:1px 20px 0px 20px;
+text-align:center;
+}
+
+.tupperware{
+    border: 1px solid #333; /* The border around all content */
+            padding: 20px;
+            max-width: 600px;  /* Keeps it from getting too wide on big screens */
+            margin:auto;
+            border-radius:0px; /* Optional: rounded corners */
+            display: flex;
+            flex-direction: column; /* Ensures content stacks vertically*/
+            text-align: center;
+}
+
+ /* Media query for mobile devices */
+ @media(max-width:600px){
+    .tupperware{
+        max-width: 350px; /* Use full width on small screens */
+        padding: 5px; /* Reduce padding for smaller screens */
+                
+    }
+}
+
+p8{
+    padding: px;
+            max-width: 600px;  /* Keeps it from getting too wide on big screens */
+            margin:auto; 
+            display: flex;
+            flex-direction: column; /* Ensures content stacks vertically*/
+            text-align: center;
+}
+
+.lunchbox{
+            padding: 20px;
+            max-width: 600px;  /* Keeps it from getting too wide on big screens */
+            margin:auto;
+            border-radius:0px; /* Optional: rounded corners */
+            display: flex;
+            flex-direction: column; /* Ensures content stacks vertically*/
+            text-align: center;
+
+}
+
+/* Media query for mobile devices */
+@media(max-width:600px){
+    .lunchbox{
+        max-width: 350px; /* Use full width on small screens */
+        padding: 5px; /* Reduce padding for smaller screens */
+                
+    }
+}
+
+.final{
+
+    height: 100px;
+}
+
+    footer{
+
+text-align: center;
+padding: 3px;
+font-size: 70%
+  
+    }
+
+    footer a {
+        margin-right: 10px; /* Add space to the right of each link */
+        display: inline-block; /* Ensure consistent spacing */
+        color: rgb(107, 106, 106)
+    }
+
+    footer a:hover{
+        text-decoration-line: underline;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+   
+
 
 
         </style>
@@ -94,19 +218,119 @@
 
         <section> <button1 class="button1">Log in with Facebook</button1></section>
 
-        <article>OR </article> 
+        <article1>OR</article1> 
 
         <section> 
-            <form> 
-                <input type="tel" id="phone" name="phone" placeholder="Mobile Number or Email" width="40" height="40">
-            </form>
+            <div class="A"> 
+            <form_A> 
+                <input type="tel" id="phone" name="phone" placeholder="Mobile Number or Email" >
+            </form_A>
+            </div>
+            
+
+            <div class="B"> 
+            <form_B>
+                <input type="password" id="password" name="password" placeholder="Password" >
+            </form_B>
+            </div>
+
+            <div class="C">
+            <form_c>
+                <input type="text" id="Full_name" name="Full_name" placeholder="Full Name" >
+            </form_c>
+            </div>
+
+            <div class="D">
+            <form_d>
+                <input type="text" id="username" name="username" placeholder="Username" >
+            </form_d>
+            </div>
+
         </section>
-         
-      
-            
-     </div>    
-            
         
+         <section4>
+            <p3>People who use our service may have uploaded your contact information to Instagram.</p3>
+         <a href="https://www.facebook.com/help/instagram/261704639352628"
+         >Learn More</a>.
+         <br>
+         <br>
+
+         <p4>By signing up, you agree to our <a href="https://help.instagram.com/581066165581870/?locale=en_US">
+            Terms </a>, 
+            <a href="https://www.facebook.com/privacy/policy">Privacy Policy</a> and
+            <a href="https://www.instagram.com/legal/cookies/">Cookies Policy</a>.
+
+         </p4>     
+     </section4>
+
+     <section><button2 class="button2">Sign up</button2></section>
+    <br>
+    
+      
+     </div>  
+     
+     <br>
+            
+    <div class="tupperware" > 
+        <section> 
+            <p6>Have an account?</p6> 
+            <br>
+            <a href="https://www.instagram.com/accounts/login/?source=auth_switcher">Log in</a>
+        
+        </section>
+
+    </div>   
+
+    <div class="lunchbox">
+
+<section>
+    <p8>Get the app.</p8>
+</section>
+
+<nav> 
+    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D2987EA96-2B4E-46F7-8838-8D4E8E761824%26utm_campaign%3DsignupPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps%253A%252F%252Fwww.bing.com%252F">
+        <img src="https://static.cdninstagram.com/rsrc.php/v4/yz/r/c5Rp7Ym-Klz.png"
+        alt="Google Play Store" style="float:left;width:125px;height:auto">
+    </a>
+
+    <a href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=-9%2C0%2C643%2C1028">
+        <img src="https://static.cdninstagram.com/rsrc.php/v4/yu/r/EHY6QnZYdNX.png"
+        alt="Microsoft"
+        style="float:right;width:125px;height:auto">
+    </a>
+</nav>
+
+    </div>
+<div class="final"></div> 
+
+<footer> 
+   
+<a href="https://about.meta.com/">Meta</a>
+<a href= "https://about.instagram.com/">About</a>
+<a href="https://about.instagram.com/blog/"> Blog</a>
+<a href="https://about.instagram.com/about-us/careers">Jobs </a>
+<a href="https://help.instagram.com/">Help </a>
+<a href="https://developers.facebook.com/docs/instagram">API </a>
+<a href="https://www.instagram.com/legal/privacy/">Privacy </a>
+<a href="https://www.instagram.com/legal/terms/">Terms </a>
+<a href="https://www.instagram.com/explore/locations/">Locations </a>
+<a href="https://www.instagram.com/web/lite/">Instagram Lite </a>
+<a href="https://www.threads.net/">Threads </a>
+<a href="https://www.facebook.com/help/instagram/261704639352628">Contact Uploading & Non-Users </a>
+<a href="https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer">Meta Verified </a>
+
+
+<br>
+<br>
+
+<div class="dropdown">
+    <span>English</span>
+    <div class="dropdown-content">
+
+    </div>
+</div>
+© 2025 Instagram from Meta
+    </footer>
 
     </body>   
 
